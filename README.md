@@ -1,3 +1,3 @@
 # Attendance App
 
-- attendance tracking app
+- App intended to maintain a roster of students in a class
