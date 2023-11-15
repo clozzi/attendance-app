@@ -2,7 +2,7 @@ import { useOutletContext } from "react-router-dom";
 import { useState } from "react";
 
 function NewStudentForm() {
-    const [students, setStudents] = useOutletContext();
+    const [students, addStudent] = useOutletContext();
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [language, setLanguage] = useState("");
@@ -30,8 +30,15 @@ function NewStudentForm() {
                 name: joinedName,
                 language: language
             }
-            const updatedStudents= [...students, newStudent]
-            setStudents(updatedStudents)
+            fetch("http://localhost:3000/students", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(newStudent),
+            })
+            .then(r => r.json())
+            .then(addStudent)
             setFirstName("");
             setLastName("");
             setLanguage("");

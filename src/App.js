@@ -12,10 +12,14 @@ function App() {
         .then(setStudents)
       }, [])
 
+    function addStudent(newStudent) {
+        setStudents([...students, newStudent])
+    }
+
     return (
         <main>
             <Nav />
-            <Outlet context={[students, setStudents]}/>
+            <Outlet context={[students, addStudent]}/>
             <Footer />
         </main>
         

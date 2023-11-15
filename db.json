@@ -1,29 +1,29 @@
 {
-    "students": [
-        {
-            "id": 1,
-            "name": "Bob Bobson",
-            "language": "Javascript"
-        },
-        {
-            "id": 2,
-            "name": "John Johnson",
-            "language": "Python"
-        },
-        {
-            "id": 3,
-            "name": "Tom Tomson",
-            "language": "Python"
-        },
-        {
-            "id": 4,
-            "name": "Rob Robson",
-            "language": "Javascript"
-        },
-        {
-            "id": 5,
-            "name": "Blob Blobson",
-            "language": "Spoken"
-        }
-    ]
+  "students": [
+    {
+      "id": 1,
+      "name": "Bob Bobson",
+      "language": "Javascript"
+    },
+    {
+      "id": 2,
+      "name": "John Johnson",
+      "language": "Python"
+    },
+    {
+      "id": 3,
+      "name": "Tom Tomson",
+      "language": "Python"
+    },
+    {
+      "id": 4,
+      "name": "Rob Robson",
+      "language": "Javascript"
+    },
+    {
+      "id": 5,
+      "name": "Blob Blobson",
+      "language": "Spoken"
+    }
+  ]
 }
