@@ -2,7 +2,8 @@
     "students": [
         {
             "id": 1,
-            "name": "Bob Bobson"
+            "name": "Bob Bobson",
+            "present": false
         },
         {
             "id": 2,
@@ -10,15 +11,18 @@
         },
         {
             "id": 3,
-            "name": "Tom Tomson"
+            "name": "Tom Tomson",
+            "present": false
         },
         {
             "id": 4,
-            "name": "Rob Robson"
+            "name": "Rob Robson",
+            "present": false
         },
         {
             "id": 5,
-            "name": "Blob Blobson"
+            "name": "Blob Blobson",
+            "present": false
         }
     ]
 }
