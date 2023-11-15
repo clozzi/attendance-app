@@ -1,0 +1,24 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "Bob Bobson"
+        },
+        {
+            "id": 2,
+            "name": "John Johnson"
+        },
+        {
+            "id": 3,
+            "name": "Tom Tomson"
+        },
+        {
+            "id": 4,
+            "name": "Rob Robson"
+        },
+        {
+            "id": 5,
+            "name": "Blob Blobson"
+        }
+    ]
+}
