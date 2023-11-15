@@ -1,10 +1,21 @@
-
+import { useOutletContext } from "react-router-dom";
 
 function Home() {
+    const [students, setStudents] = useOutletContext();
+
+    const studentList = students.map(student => (
+            <li key={student.id}>{student.name}<hr /></li>
+        ))
+
     return (
         <>
         <h1>Home Page</h1>
-        <p>Some other text here</p>
+        <div className="Home">
+                <h3>Student Roster</h3>
+                <ol>
+                    {studentList}
+                </ol>
+            </div>
         </>
     )
 };
