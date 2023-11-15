@@ -1,24 +1,23 @@
+import { useState } from "react";
 import { useOutletContext } from "react-router-dom";
+import StudentCard from "./StudentCard";
 
 function AttendanceForm() {
     const students = useOutletContext();
+    const [present, setPresent] = useState(false);
+
+    function handleAttendance(e) {
+        setPresent(e.target.value)
+    }
 
     return (
         <div>
             <h1>Attendance Form</h1>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Status</th>
-                </tr>
+            <ol>
                 {students.map((student) => (
-                    <tr key={student.id}>
-                        <td>{student.name}</td>
-                    </tr>
-                )
-                )}
-            </table>
-            
+                    <StudentCard student={student} handleAttendance={handleAttendance} present={present} />
+            ))}
+            </ol>
         </div>
     )
 }
