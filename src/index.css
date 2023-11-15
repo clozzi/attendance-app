@@ -13,3 +13,7 @@ code {
     monospace;
 }
 
+li {
+  border-style: inset;
+  padding: 10px;
+}

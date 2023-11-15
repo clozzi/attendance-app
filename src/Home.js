@@ -4,7 +4,7 @@ function Home() {
     const [students, addStudent] = useOutletContext();
 
     const studentList = students.map(student => (
-            <li key={student.id}>{student.name}<hr /></li>
+            <li key={student.id}>{student.name}</li>
         ))
 
     return (
