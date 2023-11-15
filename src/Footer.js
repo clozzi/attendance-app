@@ -1,8 +1,8 @@
-
+import logo from "./logo192.png"
 
 function Footer() {
     return (
-        <footer>Created with React</footer>
+        <footer>Created with React<br/><img src={logo} /></footer>
     )
 };
 

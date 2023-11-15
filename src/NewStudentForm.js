@@ -21,29 +21,28 @@ function NewStudentForm() {
 
     function handleAddStudent(e) {
         e.preventDefault();
-        const fullName = [firstName, lastName]
-        const joinedName = fullName.join(" ")
-        const id = (students.length + 1)
-        const newStudent = {
-            id: id,
-            name: joinedName,
-            language: language
+        if (firstName.length > 0 && lastName.length > 0) {
+            const fullName = [firstName, lastName]
+            const joinedName = fullName.join(" ")
+            const id = (students.length + 1)
+            const newStudent = {
+                id: id,
+                name: joinedName,
+                language: language
+            }
+            const updatedStudents= [...students, newStudent]
+            setStudents(updatedStudents)
+            setFirstName("");
+            setLastName("");
+            setLanguage("");
+        } else {
+            alert ("Students must have a name!")
         }
-        const updatedStudents= [...students, newStudent]
-        setStudents(updatedStudents)
-        setFirstName("");
-        setLastName("");
-        setLanguage("");
     }
 
     return (
         <>
             <h1>New Student Form</h1>
-            {/* <ol>
-                {students.map((student) => (
-                    <li>{student.name}</li>
-            ))}
-            </ol> */}
             <h3>Add a new student to the roster using the form below.</h3>
             <form onSubmit={handleAddStudent}>
                 <input type="text" value={firstName} onChange={handleFirstName} placeholder="First Name"/>

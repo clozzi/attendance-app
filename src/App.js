@@ -12,8 +12,6 @@ function App() {
         .then(setStudents)
       }, [])
 
-    
-
     return (
         <main>
             <Nav />
