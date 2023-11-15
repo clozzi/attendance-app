@@ -4,20 +4,25 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import About from './About';
 import Home from './Home';
-import AttendanceForm from './AttendanceForm';
+import App from './App';
+import NewStudentForm from './NewStudentForm';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <App />,
     children: [
+      {
+        path: "/home",
+        element: <Home />
+      },
       {
         path: "/about",
         element: <About />
       },
       {
-        path: "/attendance",
-        element: <AttendanceForm />
+        path: "/newStudentForm",
+        element: <NewStudentForm />
       }
     ]
   }
@@ -28,3 +33,4 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <RouterProvider router={router} />
 );
+

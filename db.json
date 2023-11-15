@@ -3,26 +3,27 @@
         {
             "id": 1,
             "name": "Bob Bobson",
-            "present": false
+            "language": "Javascript"
         },
         {
             "id": 2,
-            "name": "John Johnson"
+            "name": "John Johnson",
+            "language": "Python"
         },
         {
             "id": 3,
             "name": "Tom Tomson",
-            "present": false
+            "language": "Python"
         },
         {
             "id": 4,
             "name": "Rob Robson",
-            "present": false
+            "language": "Javascript"
         },
         {
             "id": 5,
             "name": "Blob Blobson",
-            "present": false
+            "language": "Spoken"
         }
     ]
 }
