@@ -24,16 +24,6 @@
       "id": 5,
       "name": "Blob Blobson",
       "language": "Spoken"
-    },
-    {
-      "id": 6,
-      "name": "Slob Slobson",
-      "language": "Spoken"
-    },
-    {
-      "id": 7,
-      "name": "First Last",
-      "language": "Javascript"
     }
   ]
 }
