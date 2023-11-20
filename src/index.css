@@ -17,3 +17,11 @@ li {
   border-style: inset;
   padding: 10px;
 }
+
+h1 {
+  color:blue;
+}
+
+h3 {
+  color:gray
+}
