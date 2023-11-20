@@ -2,7 +2,7 @@ import logo from "./logo192.png"
 
 function Footer() {
     return (
-        <footer>Created with React<br/><img src={logo} alt="React logo" style={{height: 50, width: 50}}/></footer>
+        <small>Created with React<br/><img src={logo} alt="React logo" style={{height: 30, width: 30}}/></small>
     )
 };
 
