@@ -19,6 +19,7 @@ function App() {
     return (
         <main>
             <Nav />
+            <h3 style={{color: "#003300", backgroundColor: "#6699ff", textShadow: "2px 2px 8px #e6f2ff"}}>Click on any of the links above to begin exploring your student roster!</h3>
             <Outlet context={[students, addStudent]}/>
             <Footer />
         </main>
