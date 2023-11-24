@@ -4,27 +4,36 @@
       "id": 1,
       "name": "Bob Bobson",
       "language": "Javascript",
+      "learning-style": "Kinesthetic",
       "image": "https://cdn.pixabay.com/photo/2023/03/17/16/55/man-7859085_1280.jpg"
     },
     {
       "id": 2,
       "name": "John Johnson",
-      "language": "Python"
+      "language": "Python",
+      "learning-style": "Interpersonal",
+      "image": "https://cdn.pixabay.com/photo/2020/08/31/12/24/mysterious-5532334_640.jpg"
     },
     {
       "id": 3,
       "name": "Tom Tomson",
-      "language": "Python"
+      "language": "Python",
+      "learning-style": "Kinesthetic",
+      "image": "https://cdn.pixabay.com/photo/2017/08/09/23/59/skeptical-2616245_640.jpg"
     },
     {
       "id": 4,
       "name": "Rob Robson",
-      "language": "Javascript"
+      "language": "Javascript", 
+      "learning-style": "Visual",
+      "image": "https://cdn.pixabay.com/photo/2016/08/11/02/57/headshot-1584735_640.jpg"
     },
     {
       "id": 5,
       "name": "Blob Blobson",
-      "language": "Spoken"
+      "language": "Spoken",
+      "learning-style": "Auditory",
+      "image": "https://cdn.pixabay.com/photo/2017/08/25/09/36/dog-2679538_640.jpg"
     },
     {
       "id": 6,
