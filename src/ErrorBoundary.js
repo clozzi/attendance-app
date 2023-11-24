@@ -1,5 +1,5 @@
 import { useRouteError } from "react-router-dom";
-import nope from "./you-didnt-say-the-magic-word-ah-ah.gif";
+import nope from "./photos/you-didnt-say-the-magic-word-ah-ah.gif";
 
 function ErrorBoundary() {
     let error = useRouteError();
