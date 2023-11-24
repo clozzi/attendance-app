@@ -3,7 +3,8 @@
     {
       "id": 1,
       "name": "Bob Bobson",
-      "language": "Javascript"
+      "language": "Javascript",
+      "image": "https://cdn.pixabay.com/photo/2023/03/17/16/55/man-7859085_1280.jpg"
     },
     {
       "id": 2,
