@@ -11,7 +11,7 @@ function About() {
     return (
         <>
             <h1>About</h1>
-            <h3>Here you can find the preferred languages of your students.</h3>
+            <h3>Here you can track general information for your students.</h3>
             <ol>
                 {studentList}
             </ol>
