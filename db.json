@@ -24,7 +24,7 @@
     {
       "id": 4,
       "name": "Rob Robson",
-      "language": "Javascript", 
+      "language": "Javascript",
       "learningStyle": "Visual",
       "image": "https://cdn.pixabay.com/photo/2016/08/11/02/57/headshot-1584735_640.jpg"
     },
@@ -34,6 +34,13 @@
       "language": "Spoken",
       "learningStyle": "Auditory",
       "image": "https://cdn.pixabay.com/photo/2017/08/25/09/36/dog-2679538_640.jpg"
+    },
+    {
+      "id": 6,
+      "name": "dsada fdsfs",
+      "language": "Javascript",
+      "learningStyle": "vsf",
+      "image": "jlkjl"
     }
   ]
 }

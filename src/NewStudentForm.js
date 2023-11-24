@@ -6,6 +6,8 @@ function NewStudentForm() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [language, setLanguage] = useState("");
+    const [learningStyle, setLearningStyle] = useState("");
+    const [image, setImage] = useState("");
 
     function handleFirstName(e) {
         setFirstName(e.target.value)
@@ -19,6 +21,14 @@ function NewStudentForm() {
         setLanguage(e.target.value)
     }
 
+    function handleLearningStyle(e) {
+        setLearningStyle(e.target.value)
+    }
+
+    function handleImage(e) {
+        setImage(e.target.value)
+    }
+
     function handleAddStudent(e) {
         e.preventDefault();
         if (firstName.length > 0 && lastName.length > 0) {
@@ -28,7 +38,9 @@ function NewStudentForm() {
             const newStudent = {
                 id: id,
                 name: joinedName,
-                language: language
+                language: language,
+                learningStyle: learningStyle,
+                image: image
             }
             fetch("http://localhost:3000/students", {
                 method: "POST",
@@ -42,6 +54,8 @@ function NewStudentForm() {
             setFirstName("");
             setLastName("");
             setLanguage("");
+            setLearningStyle("");
+            setImage("");
         } else {
             alert ("Students must have a name!")
         }
@@ -60,6 +74,8 @@ function NewStudentForm() {
                     <option value="Python">Python</option>
                     <option value="Spoken">Spoken</option>
                 </select>
+                <input type="text" value={learningStyle} onChange={handleLearningStyle} placeholder="Learning Style" />
+                <input type="text" value={image} onChange={handleImage} placeholder="Image URL" />
                 <button type="submit">Add Student to Roster</button>
             </form>
         </>
