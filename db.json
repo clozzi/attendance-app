@@ -34,13 +34,6 @@
       "language": "Spoken",
       "learningStyle": "Auditory",
       "image": "https://cdn.pixabay.com/photo/2017/08/25/09/36/dog-2679538_640.jpg"
-    },
-    {
-      "id": 6,
-      "name": "First Last",
-      "language": "Spoken",
-      "learningStyle": "Learning",
-      "image": "URL"
     }
   ]
 }
