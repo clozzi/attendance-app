@@ -4,4 +4,4 @@
 
 ## Usage
 
-![](RosterAppUsage.gif)
+![](StudentRosterApp.gif)
