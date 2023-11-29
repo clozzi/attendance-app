@@ -25,7 +25,7 @@ function About() {
         <>
             <h1>About</h1>
             <h3>Here you can track general information for your students.</h3>
-            <label>Sort Students by Language</label>
+            <label>Filter Students by Language</label>
             <br />
             <select onChange={handleFilter}>
                 <option value="">Select Language</option>
