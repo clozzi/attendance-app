@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router-dom";
+import { useNavigate, useOutletContext } from "react-router-dom";
 import { useState } from "react";
 
 function NewStudentForm() {
@@ -8,6 +8,8 @@ function NewStudentForm() {
     const [language, setLanguage] = useState("");
     const [learningStyle, setLearningStyle] = useState("");
     const [image, setImage] = useState("");
+
+    const navigate = useNavigate();
 
     function handleFirstName(e) {
         setFirstName(e.target.value)
@@ -56,6 +58,7 @@ function NewStudentForm() {
             setLanguage("");
             setLearningStyle("");
             setImage("");
+            navigate('/home')
         } else {
             alert ("Students must have a name!")
         }
